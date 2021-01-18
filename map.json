@@ -71,9 +71,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"jitsiRoom",
                  "type":"string",
-                 "value":"https:\/\/meet.google.com\/fgg-skuk-sgx"
+                 "value":"fak55hebdo"
                 }],
          "type":"tilelayer",
          "visible":true,
