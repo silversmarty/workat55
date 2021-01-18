@@ -55,7 +55,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"..\/map_1.json#from_0_d"
+                 "value":".\/map_1.json#from_0_d"
                 }],
          "type":"tilelayer",
          "visible":true,
