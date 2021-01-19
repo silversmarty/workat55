@@ -1036,6 +1036,19 @@
          "tilecount":378,
          "tileheight":32,
          "tilewidth":32
+        }, 
+        {
+         "columns":8,
+         "firstgid":1491,
+         "image":"F4I1H7.gif",
+         "imageheight":288,
+         "imagewidth":256,
+         "margin":0,
+         "name":"F4I1H7",
+         "spacing":0,
+         "tilecount":72,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
