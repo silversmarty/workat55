@@ -1,0 +1,39 @@
+<html>
+
+	<head>
+	
+	</head>
+	<body>
+		<img src='' id='id1'>
+		<div id='titre'></div>
+	
+	<script>
+		var oeuvres = [
+		{
+			'name' : 'A',
+			'titre' : 'Composition en rouge, bleu, jaune et noir',
+			'artiste' : 'Mondrian',
+			'interprete' : 'Elodie Jolain'
+		},{
+			'name' : 'B',
+			'titre' : 'Grande vague de Kanagawa',
+			'artiste' : 'Hokusai',
+			'interprete' : 'Eja Rakotoarimanana'
+		}
+		]
+	
+		const urlParams = new URLSearchParams(window.location.search);
+		var oeuvre = urlParams.get("o");
+		
+		var _img = document.getElementById('id1');
+		var newImg = new Image;
+		newImg.onload = function() {
+			_img.src = this.src;
+		}
+		newImg.src = 'https://silversmarty.github.io/workat55/oeuvres/oeuvre%20'+oeuvre+'.png';
+		
+		document.getElementById('titre').innerHTML = oeuvres.filter(x => x.name == oeuvre)[0].titre;
+		
+	</script>
+	</body>
+</html>
