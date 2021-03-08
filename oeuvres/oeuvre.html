@@ -4,9 +4,11 @@
 	
 	</head>
 	<body>
-		<img src='' id='id1'>
-		<div id='titre'></div>
-	
+		<div style='text-align : center;padding:0% 10% 0% 10%;'>
+			<img src='' id='id1'>
+			<div><span id='titre'></span> (<span id='artiste'></span>)</div>
+			<div>par <span id='interprete'></span></div>
+		</div>
 	<script>
 		var oeuvres = [
 		{
@@ -33,6 +35,8 @@
 		newImg.src = 'https://silversmarty.github.io/workat55/oeuvres/oeuvre%20'+oeuvre+'.png';
 		
 		document.getElementById('titre').innerHTML = oeuvres.filter(x => x.name == oeuvre)[0].titre;
+		document.getElementById('artiste').innerHTML = oeuvres.filter(x => x.name == oeuvre)[0].artiste;
+		document.getElementById('interprete').innerHTML = oeuvres.filter(x => x.name == oeuvre)[0].interprete;
 		
 	</script>
 	</body>
